@@ -11,10 +11,12 @@ async function login() {
     }
 }
 
-logout = async () => {
+async function logout() {
+    
     await Moralis.User.logOut();
+    }
+    
 }
-
 
 }
 document.getElementById("login_button").onclick = login;

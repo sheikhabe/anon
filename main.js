@@ -11,4 +11,11 @@ async function login() {
     }
 }
 
+logout = async () => {
+    await Moralis.User.logOut();
+}
+
+
+}
 document.getElementById("login_button").onclick = login;
+document.getElementById("logout_button").onclick = logout;
